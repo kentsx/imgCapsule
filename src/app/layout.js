@@ -8,8 +8,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "图床",
-  description: "图床",
+  title: "可墨图库",
+  description: "可墨图片上传管理系统",
 };
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId="G-JVKEXR5XSG" />
+      // <GoogleAnalytics gaId="G-JVKEXR5XSG" />
     </html>
   );
 }
