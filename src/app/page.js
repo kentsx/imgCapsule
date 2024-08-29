@@ -336,7 +336,7 @@ export default function Home() {
       <div className="mt-[60px] w-9/10 sm:w-9/10 md:w-9/10 lg:w-9/10 xl:w-3/5 2xl:w-2/3">
         <div className="flex flex-row">
           <div className="flex flex-col">
-            <div className="text-gray-800 text-lg">图片或视频上传</div>
+            <div className="text-gray-800 text-lg">图片上传</div>
             <div className="mb-4 text-sm text-gray-500">
               上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">{Total}</span> 张图片; 你访问本站的IP是：<span className="text-cyan-600">{IP}</span>
             </div>
@@ -347,10 +347,10 @@ export default function Home() {
               value={selectedOption} // 将选择框的值绑定到状态中的 selectedOption
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
               className="text-lg p-2 border  rounded text-center w-auto sm:w-auto md:w-auto lg:w-auto xl:w-auto  2xl:w-36">
-              <option value="tg">TG</option>
+              // <option value="tg">TG</option>  //先关闭tg私聊和微信机器人的功能
               <option value="tgchannel">TG_Channel</option>
 
-              <option value="tencent">tencent</option>
+              // <option value="tencent">tencent</option>
             </select>
           </div>
 
